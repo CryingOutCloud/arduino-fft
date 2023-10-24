@@ -37,7 +37,9 @@ These values can be changed in order to evaluate the functions
 */
 const uint16_t samples = 256; //This value MUST ALWAYS be a power of 2
 const double signalFrequency = 1000;
-const double samplingFrequency = 100000;
+// const double samplingFrequency = 100000;
+
+const double samplingFrequency = 50000;
 const uint8_t amplitude = 1000;
 
 const double miniFrequency = 1000000;
@@ -73,8 +75,8 @@ void loop()
 
 
 
-  // doFFT();
-  BandPassFFT();
+  doFFT();
+  // BandPassFFT();
 }
 
 
